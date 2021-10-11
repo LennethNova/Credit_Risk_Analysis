@@ -8,27 +8,27 @@ The Purpose of this analysis is to evaluate some models with unbalanced classes 
 - **Oversampling**
 Using oversampling, it can be observed that the high risk precision is 1%, its recall is 69%, while the low risk has a 100% precision but the recall has 60% of accuracy.
 
-![oversampling](https://github.com/LennethNova/Amazon_Vine_Analysis/blob/main/Resources/c16.PNG)
+![oversampling](https://github.com/LennethNova/Credit_Risk_Analysis/blob/main/Resources/oversampling.PNG)
 
 - With SMOTE oversampling, the high risk precision is 1% and the recall is 63%. The low risk has a precision of 100% while the recall is 69%.
 
-![SMOTE_oversampling](https://github.com/LennethNova/Amazon_Vine_Analysis/blob/main/Resources/c17.PNG)
+![SMOTE_oversampling](https://github.com/LennethNova/Credit_Risk_Analysis/blob/main/Resources/SMOTE_oversampling.PNG)
 
 - Undersampling presents an accuracy in high risk precision of 1% and a recall of 69%. The low risk presents a precision of 100% and a recall of 39%.
 
-![Undersampling](https://github.com/LennethNova/Amazon_Vine_Analysis/blob/main/Resources/c14.PNG)
+![Undersampling](https://github.com/LennethNova/Credit_Risk_Analysis/blob/main/Resources/undersampling.PNG)
 
 - In the case of combination sampling (under and oversampling), high risk precision has a percentage of 1% and the recall 72%. The low risk presents a precision of 100% but the recall is 57%.
 
-![combination_sampling](https://github.com/LennethNova/Amazon_Vine_Analysis/blob/main/Resources/c15.PNG)
+![combination_sampling](https://github.com/LennethNova/Credit_Risk_Analysis/blob/main/Resources/combination_sampling.PNG)
 
 - Using balanced ramdom forest, presents a high risk precision of 3% and a recall of 70%. The low risk has a precision of 100% and a recall of 87%. In this case, the high risk precision improved a bit.
 
-![balanced_random_forest](https://github.com/LennethNova/Amazon_Vine_Analysis/blob/main/Resources/c20.PNG)
+![balanced_random_forest](https://github.com/LennethNova/Credit_Risk_Analysis/blob/main/Resources/balanced_random_forest.PNG)
 
 - AdaBoost, has a high risk precision of 9% and a recall of 92%, it also has a low risk of 100% and a recall of 94%. This improved also a little.
 
-![AdaBoost](https://github.com/LennethNova/Amazon_Vine_Analysis/blob/main/Resources/c20.PNG)
+![AdaBoost](https://github.com/LennethNova/Credit_Risk_Analysis/blob/main/Resources/Easy_Ensemble_AdaBoost.PNG)
 
 ## Summary:
 With this results, using the F1 as a metric, and considering the respective precision and recall, the models with most improvements were the Balanced Random Forests and the AdaBoost. Even if those models were the ones that presented a significant accuracy, none of the models should be used to predict the high risks due to the low precision in the respective risk percentage.
